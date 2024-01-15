@@ -177,6 +177,17 @@ main section {
     font-weight: bold;
 }
 
+/* your destination section start */
+.your-destination{
+    padding: 0 100px;
+    text-align: center;
+}
+.your-destination .small-text{
+    color: rgba(19, 19, 24, 0.70);
+}
+.destini-img-container img{
+    margin: 5px 15px;
+}
 /* footer section start */
 
 
@@ -192,7 +203,9 @@ main section {
     .section-title {
         font-size: 20px;
     }
-
+    .small-text{
+        font-size: 14px;
+    }
     /* header section,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
     .brand h2 {
         font-size: 20px;
@@ -269,5 +282,14 @@ main section {
     .tour-section img {
         width: 70%;
         margin: 0 auto;
+    }
+
+    /* your destination section */
+    .destini-img-container{
+        text-align: center;
+    }
+    .destini-img-container img{
+        width: 75%;
+        margin: 5px 15px;
     }
 }
