@@ -23,11 +23,11 @@ body {
 }
 /* common code end here */
 
-/* header section start */
+/* header section start,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
 .header {
     font-family: 'Mulish', sans-serif;
 }
-
+/* navigation section */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -38,11 +38,6 @@ body {
     display: flex;
     align-items: center;
     width: 30%;
-}
-
-.brand-img {
-    width: 20%;
-    height: 50%;
 }
 
 .brand h2 {
@@ -80,3 +75,20 @@ body {
 
 
 /* mobile media query start */
+@media screen and (max-width:600px) {
+    /* common code */
+    body {
+        padding: 20px 20px;
+    }
+    /* header section,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
+    .brand h2 {
+        font-size: 20px;
+    }
+    /* navigation section */
+    .nav ul {
+        display: none;
+    }
+    .hide{
+        display: block;
+    }
+}
