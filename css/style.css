@@ -1,18 +1,76 @@
 /* imported fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Mulish:wght@400;500;600;700;800;900&display=swap');
+
 /* imported font family 
 font-family: 'Inter', sans-serif;
 font-family: 'Mulish', sans-serif;
 */
 /* common code start here */
+:root {
+    --title-color: #131318;
+}
 
+body {
+    padding: 20px 140px;
+}
 
+#orange {
+    color: #FF5400;
+    ;
+}
+.hide{
+    display: none;
+}
 /* common code end here */
 
 /* header section start */
+.header {
+    font-family: 'Mulish', sans-serif;
+}
 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.brand {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
 
+.brand-img {
+    width: 20%;
+    height: 50%;
+}
+
+.brand h2 {
+    color: var(--title-color);
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav li>a {
+    text-decoration: none;
+    color: #424247;
+    font-size: 18px;
+    font-weight: 400;
+}
+.nav li>a:hover{
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 5px;
+}
 /* main section start */
 
 
