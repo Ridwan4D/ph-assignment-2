@@ -9,6 +9,8 @@ font-family: 'Mulish', sans-serif;
 :root {
     --title-color: #131318;
     --orange-color: #FF5400;
+    --small-text-1: #5A5A5D;
+    --small-text-2: #131318b3;
 }
 
 body {
@@ -65,6 +67,11 @@ body {
 .tour-content ul li,
 .perfect-place ul li {
     margin-top: 20px;
+}
+
+.tour-content .small-text,
+.your-destination .small-text {
+    color: var(--small-text-2);
 }
 
 /* common code end here */
@@ -162,7 +169,7 @@ body {
     text-align: left;
     padding: 15px 20px;
     border-radius: 8px;
-    color: rgba(19, 19, 24, 0.50);
+    color: var(--small-text-2);
     font-size: 16px;
     font-weight: 400;
 }
@@ -174,6 +181,7 @@ body {
 /* main section start,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
 main section {
     margin: 70px 0;
+    font-family: 'Mulish', sans-serif;
 }
 
 /* popular tour section */
@@ -183,18 +191,10 @@ main section {
     gap: 100px;
 }
 
-.tour-content .small-text {
-    color: rgba(19, 19, 24, 0.70);
-}
-
 /* your destination section start */
 .your-destination {
     padding: 0 100px;
     text-align: center;
-}
-
-.your-destination .small-text {
-    color: rgba(19, 19, 24, 0.70);
 }
 
 .destini-img-container img {
@@ -225,12 +225,12 @@ main section {
 }
 
 .choose-us>.small-text {
-    color: rgba(19, 19, 24, 0.70);
+    color: var(--small-text-2);
     padding: 0 150px;
 }
 
 .choose-card .small-text {
-    color: #5A5A5D;
+    color: var(--small-text-1);
 }
 
 .card-1 {
@@ -282,13 +282,16 @@ main section {
     display: flex;
     gap: 100px;
 }
-.perfect-place .small-text{
+
+.perfect-place .small-text {
     color: rgba(19, 19, 24, 0.70);
 }
+
 .perfect-place li {
     color: var(--title-color);
 }
-.place-img{
+
+.place-img {
     position: relative;
 }
 
@@ -296,10 +299,75 @@ main section {
     color: white;
     font-size: 24px;
     font-weight: 700;
-    font-family: "Mulish",sans-serif;
     position: absolute;
     bottom: 180px;
     left: 85px;
+}
+
+/* newsletter section start */
+.news-letter {
+    width: 75vw;
+    margin: 0 auto;
+    display: flex;
+    gap: 100px;
+}
+
+.input-div {
+    border: 1px solid #FF5400;
+    border-radius: 15px;
+    padding: 20px;
+    width: 40%;
+}
+
+.input-div h3 {
+    color: var(--title-color);
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.input-div .small-text {
+    color: var(--small-text-1);
+}
+
+.input-div hr {
+    border: 1px solid #ebe8e8;
+}
+
+.input-div input {
+    width: 85%;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(19, 19, 24, 0.05);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.input-div .btn {
+    font-weight: bold;
+    width: 90%;
+}
+
+.offer-div {
+    width: 60%;
+    border-radius: 10px;
+    background-image: url("../Images/offer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-div .btn {
+    color: #FFF;
+    font-size: 24px;
+    transform: rotate(-30deg);
+    margin: 55px 0 0 270px;
+}
+
+.offer-div .btn>.big {
+    font-size: 32px;
+    font-weight: 800;
 }
 
 /* footer section start */
@@ -327,19 +395,24 @@ main section {
         padding: 20px 20px;
     }
 
+    
+    .small-text,.offer-div .btn{
+        font-size: 14px;
+    }
     .section-title,
     .card-title,
-    .position-h3{
+    .position-h3,
+    .offer-div .btn>.big {
         font-size: 20px;
     }
 
-    .small-text {
-        font-size: 14px;
-    }
-    .tour-section,.perfect-place {
+    .tour-section,
+    .perfect-place,
+    .news-letter {
         flex-direction: column;
         gap: 40px;
     }
+
     /* header section,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
     .brand h2 {
         font-size: 20px;
@@ -456,9 +529,11 @@ main section {
         width: 70%;
         margin: 0 auto;
     }
-    .place-img img{
+
+    .place-img img {
         width: 90%;
     }
+
     .position-h3 {
         text-align: center;
         position: absolute;
@@ -466,5 +541,17 @@ main section {
         left: 40px;
         right: 55px;
     }
+
+    /* newsletter section start */
+    .input-div,.offer-div{
+        width: 100%;
+        height: 40vh;;
+    }
+    .offer-div .btn{
+        margin-left: 200px;
+    }
+
     
+    
+
 }
