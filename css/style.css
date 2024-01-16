@@ -178,16 +178,65 @@ main section {
 }
 
 /* your destination section start */
-.your-destination{
+.your-destination {
     padding: 0 100px;
     text-align: center;
 }
-.your-destination .small-text{
+
+.your-destination .small-text {
     color: rgba(19, 19, 24, 0.70);
 }
-.destini-img-container img{
+
+.destini-img-container img {
     margin: 5px 15px;
 }
+
+/* why choose us section start */
+.choose-us {
+    text-align: center;
+}
+
+.choose-card-container {
+    width: 75vw;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.choose-card {
+    width: 40%;
+    text-align: left;
+    border-radius: 16px;
+    padding: 10px 20px;
+}
+.choose-us>.small-text{
+   color:rgba(19, 19, 24, 0.70);
+   padding: 0 150px;
+}
+.choose-card .card-title {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: "Mulish", sans-serif;
+}
+
+.choose-card .small-text {
+    color: #5A5A5D;
+}
+
+.card-1 {
+    background-color: #fffbf7;
+}
+.card-2 {
+    background-color: #f4fdff;
+}
+.card-3 {
+    background-color: #fef6f6;
+}
+
 /* footer section start */
 
 
@@ -200,12 +249,14 @@ main section {
         padding: 20px 20px;
     }
 
-    .section-title {
+    .section-title,.choose-card .card-title {
         font-size: 20px;
     }
-    .small-text{
+
+    .small-text {
         font-size: 14px;
     }
+
     /* header section,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
     .brand h2 {
         font-size: 20px;
@@ -285,11 +336,20 @@ main section {
     }
 
     /* your destination section */
-    .destini-img-container{
+    .destini-img-container {
         text-align: center;
     }
-    .destini-img-container img{
+
+    .destini-img-container img {
         width: 75%;
         margin: 5px 15px;
+    }
+
+    /* choose us section start */
+    .choose-us>.small-text{
+        padding: 0 90px;
+    }
+    .choose-card {
+        width: 80%;
     }
 }
