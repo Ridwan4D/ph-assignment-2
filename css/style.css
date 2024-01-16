@@ -640,8 +640,8 @@ main section {
     }
 
     .destination-img-container img {
-        width: 75%;
-        margin: 5px 90px;
+        width: 100%;
+        margin: 5px 0 0 50px;
         
     }
 
