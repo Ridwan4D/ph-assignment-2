@@ -29,7 +29,12 @@ body {
     font-weight: 800;
     font-family: 'Mulish', sans-serif;
 }
-
+.card-title {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: "Mulish", sans-serif;
+}
 .small-text {
     font-size: 16px;
     font-weight: 400;
@@ -196,7 +201,7 @@ main section {
     text-align: center;
 }
 
-.choose-card-container {
+.choose-card-container,.explore-card-container {
     width: 75vw;
     height: auto;
     margin: 0 auto;
@@ -216,13 +221,6 @@ main section {
    color:rgba(19, 19, 24, 0.70);
    padding: 0 150px;
 }
-.choose-card .card-title {
-    color: #131318;
-    font-size: 24px;
-    font-weight: 800;
-    font-family: "Mulish", sans-serif;
-}
-
 .choose-card .small-text {
     color: #5A5A5D;
 }
@@ -237,7 +235,46 @@ main section {
     background-color: #fef6f6;
 }
 
+/* explore more section */
+
+.explore-more{
+    background-color: bisque;
+    padding: 1px 50px;
+}
+.explore-card-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+.explore-card{
+    width: 30%;
+}
+.explore-card .card-title{
+    text-align: center;
+    cursor: pointer;
+}
+.explore-card .card-title:hover{
+    color: rgb(54, 54, 251);
+}
+.explore-card img{
+    width: 100%;
+    height: 65%;    
+    border-radius: 10px;
+}
 /* footer section start */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -249,7 +286,7 @@ main section {
         padding: 20px 20px;
     }
 
-    .section-title,.choose-card .card-title {
+    .section-title,.card-title {
         font-size: 20px;
     }
 
@@ -351,5 +388,20 @@ main section {
     }
     .choose-card {
         width: 80%;
+    }
+
+    /* explore more section start */
+    .explore-card-container{
+        flex-direction: column;
+    }
+    .explore-card{
+        width: 100%;
+    }
+    .explore-card img{
+        width: 100%;
+        height: 65%;    
+    }
+    .explore-card .card-title{
+        padding: 0 0;
     }
 }
