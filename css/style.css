@@ -66,12 +66,15 @@ font-family: 'Mulish', sans-serif;
 }
 
 .tour-content .small-text,
-.your-destination .small-text {
+.your-destination .small-text,
+.deal-discount .small-text {
     color: var(--small-text-2);
 }
+
 hr {
     border: 1px solid #ebe8e8;
 }
+
 /* common code end here */
 
 /* header section start,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
@@ -280,6 +283,79 @@ main section {
     border-radius: 10px;
 }
 
+
+
+/* deals and discount section start */
+.deal-discount {
+    text-align: center;
+}
+
+.deal-discount .small-text {
+    padding: 0 200px;
+}
+
+.deal-discount .bg-div{
+    width: 70vw;
+    height: 60vh;
+    text-align: left;
+    border-radius: 20px;
+    padding: 50px 0;
+    margin: 30px auto;
+}
+
+.inner-div {
+    height: auto;
+    width: 40%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 40px;
+}
+
+.inner-div .title-div {
+    color: var(--small-text-1);
+    display: flex;
+    gap: 10px;
+}
+.title-div i{
+    color: var(--orange-color);
+}
+.inner-div .small-text {
+    color: var(--small-text-1);
+    padding: 0;
+}
+
+.inner-div .price {
+    color: var(--orange-color);
+    font-size: 20px;
+    font-weight: 800;
+}
+.inner-div .btn{
+    font-weight: bold;
+}
+.bg-div-1{
+    background-image: url("../Images/bg-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.bg-div-2{
+    background-image: url("../Images/bg-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inner-1{
+    margin-left: 505px;
+}
+.inner-2{
+    margin-left: 50px;
+}
+.deal-discount .btn{
+    font-weight: bold;
+}
+
+
+
+
+
 /* perfect place section start */
 .perfect-place {
     display: flex;
@@ -381,16 +457,18 @@ main section {
     font-size: 32px;
     margin: 0 auto;
 }
-.footer .small-text{
+
+.footer .small-text {
     color: var(--small-text-1);
 }
-.social-link a{
+
+.social-link a {
     font-size: 40px;
     color: black;
     margin: 10px 20px;
 }
 
-.footer hr{
+.footer hr {
     margin: 20px 0;
 }
 
@@ -548,6 +626,29 @@ main section {
         padding: 0 0;
     }
 
+    /* deals and discount */
+    .deal-discount .small-text{
+        padding: 0 60px;
+    }
+    .bg-div-1,.bg-div-2{
+        background-position: center;
+    }
+    .inner-div {
+        width: 70%;
+        padding: 10px;
+        margin-top: 50px;
+    }
+    .inner-1{
+        margin-left: 50px;
+    }
+    .inner-div .small-text{
+        padding: 0 0;
+    }
+
+
+
+
+
     /* perfect place section start */
     .perfect-place {
         width: 70%;
@@ -579,10 +680,11 @@ main section {
     }
 
     /* footer section start */
-    .footer{
+    .footer {
         padding: 20px 30px;
     }
-    .social-link a{
+
+    .social-link a {
         font-size: 20px;
     }
 
