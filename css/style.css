@@ -624,7 +624,7 @@ main section {
 
     /* your destination section */
     .your-destination{
-        padding: 0 10px;
+        padding: 0 50px;
     }
     .destination-img-container{
         text-align: center;
