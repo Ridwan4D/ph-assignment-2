@@ -29,12 +29,14 @@ body {
     font-weight: 800;
     font-family: 'Mulish', sans-serif;
 }
+
 .card-title {
     color: #131318;
     font-size: 24px;
     font-weight: 800;
     font-family: "Mulish", sans-serif;
 }
+
 .small-text {
     font-size: 16px;
     font-weight: 400;
@@ -47,11 +49,22 @@ body {
     border-radius: 8px;
     background-color: var(--orange-color);
     padding: 12px 30px;
+    cursor: pointer;
+}
+
+.tour-content .btn,
+.perfect-place .btn {
+    font-weight: bold;
 }
 
 .btn:active {
     background-color: gray;
     color: aquamarine;
+}
+
+.tour-content ul li,
+.perfect-place ul li {
+    margin-top: 20px;
 }
 
 /* common code end here */
@@ -174,14 +187,6 @@ main section {
     color: rgba(19, 19, 24, 0.70);
 }
 
-.tour-content ul li {
-    margin-top: 20px;
-}
-
-.tour-content .btn {
-    font-weight: bold;
-}
-
 /* your destination section start */
 .your-destination {
     padding: 0 100px;
@@ -201,7 +206,8 @@ main section {
     text-align: center;
 }
 
-.choose-card-container,.explore-card-container {
+.choose-card-container,
+.explore-card-container {
     width: 75vw;
     height: auto;
     margin: 0 auto;
@@ -217,10 +223,12 @@ main section {
     border-radius: 16px;
     padding: 10px 20px;
 }
-.choose-us>.small-text{
-   color:rgba(19, 19, 24, 0.70);
-   padding: 0 150px;
+
+.choose-us>.small-text {
+    color: rgba(19, 19, 24, 0.70);
+    padding: 0 150px;
 }
+
 .choose-card .small-text {
     color: #5A5A5D;
 }
@@ -228,39 +236,72 @@ main section {
 .card-1 {
     background-color: #fffbf7;
 }
+
 .card-2 {
     background-color: #f4fdff;
 }
+
 .card-3 {
     background-color: #fef6f6;
 }
 
 /* explore more section */
 
-.explore-more{
+.explore-more {
     background-color: bisque;
     padding: 1px 50px;
 }
-.explore-card-container{
+
+.explore-card-container {
     display: flex;
     gap: 20px;
     flex-wrap: nowrap;
 }
-.explore-card{
+
+.explore-card {
     width: 30%;
 }
-.explore-card .card-title{
+
+.explore-card .card-title {
     text-align: center;
     cursor: pointer;
 }
-.explore-card .card-title:hover{
-    color: rgb(54, 54, 251);
+
+.explore-card .card-title:hover {
+    color: purple;
 }
-.explore-card img{
+
+.explore-card img {
     width: 100%;
-    height: 65%;    
+    height: 65%;
     border-radius: 10px;
 }
+
+/* perfect place section start */
+.perfect-place {
+    display: flex;
+    gap: 100px;
+}
+.perfect-place .small-text{
+    color: rgba(19, 19, 24, 0.70);
+}
+.perfect-place li {
+    color: var(--title-color);
+}
+.place-img{
+    position: relative;
+}
+
+.position-h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Mulish",sans-serif;
+    position: absolute;
+    bottom: 180px;
+    left: 85px;
+}
+
 /* footer section start */
 
 
@@ -286,14 +327,19 @@ main section {
         padding: 20px 20px;
     }
 
-    .section-title,.card-title {
+    .section-title,
+    .card-title,
+    .position-h3{
         font-size: 20px;
     }
 
     .small-text {
         font-size: 14px;
     }
-
+    .tour-section,.perfect-place {
+        flex-direction: column;
+        gap: 40px;
+    }
     /* header section,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
     .brand h2 {
         font-size: 20px;
@@ -357,10 +403,6 @@ main section {
     /* main part start */
 
     /* popular tour section */
-    .tour-section {
-        flex-direction: column;
-        gap: 40px;
-    }
 
     .tour-content {
         width: 70%;
@@ -383,25 +425,46 @@ main section {
     }
 
     /* choose us section start */
-    .choose-us>.small-text{
+    .choose-us>.small-text {
         padding: 0 90px;
     }
+
     .choose-card {
         width: 80%;
     }
 
     /* explore more section start */
-    .explore-card-container{
+    .explore-card-container {
         flex-direction: column;
     }
-    .explore-card{
+
+    .explore-card {
         width: 100%;
     }
-    .explore-card img{
+
+    .explore-card img {
         width: 100%;
-        height: 65%;    
+        height: 65%;
     }
-    .explore-card .card-title{
+
+    .explore-card .card-title {
         padding: 0 0;
     }
+
+    /* perfect place section start */
+    .perfect-place {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .place-img img{
+        width: 90%;
+    }
+    .position-h3 {
+        text-align: center;
+        position: absolute;
+        bottom: 110px;
+        left: 40px;
+        right: 55px;
+    }
+    
 }
